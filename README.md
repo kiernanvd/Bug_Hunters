@@ -1,4 +1,4 @@
-# Fruit store
+# Bug Hunters store
 State management in anuglar applications using ngrx/store
 
 ## Prerequisites
@@ -9,9 +9,9 @@ State management in anuglar applications using ngrx/store
 ## Getting started
 - Clone the project and install dependencies:
 - Enter the project folder
-- Run npm install 
+- Run npm install
 - Start server by running `node server`
-- Run `ng serve` to start the Angular dev server 
+- Run `ng serve` to start the Angular dev server
 
 
 ## Built With
