@@ -23,7 +23,7 @@
 	 margin: 0;
 	 letter-spacing: 1px;
 	 color: #34badb;
-	 background: linear-gradient(90deg, rgba(52, 186, 219, 0.9878326330532213) 44%, rgba(0, 255, 190, 1) 100%);
+	 background: linear-gradient(to bottom, #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 82%,#0e0e0e 100%);
 	 -webkit-background-clip: text;
 	 -webkit-text-fill-color: transparent;
 }
