@@ -1,7 +1,7 @@
 # Bug Hunters store
 State management in anuglar applications using ngrx/store
-![Bug Hunters Logo](/images/logo.png)
-![Preview](/images/screencapture.png)
+![Bug Hunters Logo](/src/assets/images/logo.png)
+![Preview](/src/assets/images/screencapture.png)
 
 ## Prerequisites
 - [Angular](https://angular.io)
