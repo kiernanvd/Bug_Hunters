@@ -1,0 +1,21 @@
+<div style="text-align: center">
+    <div *ngIf="product" class="card"
+    style="width: 800px; height: auto; margin: 30px; display: inline-block; text-align: left;">
+      <div class="card-header" style="font-weight: bold">{{product.name | uppercase}}</div>
+      <div class="card-body">
+        <p *ngIf="product.imgSrc" style="text-align: center"><img src='{{product.imgSrc}}' width=250 height=250></p>
+        <p><strong>Description: </strong>{{product.description}}</p>
+        <p><strong>Rating: </strong> {{product.rating}}</p>
+        <p><strong>Reviews</strong></p>
+          <div class="card-body" *ngFor="let review of product.reviews">
+            <p *ngIf="review.name"><strong>Name: </strong>{{review.name}}</p>
+            <p *ngIf="review.review">{{review.review}}</p>
+            <p *ngIf="review.rating"><strong>Rating: </strong>{{review.rating}}</p>
+            <p *ngIf="review.date"><strong>Date: </strong>{{review.date}}</p>
+          </div>
+        <div class="container row">
+            <button type="button" class="btn btn-primary" (click)="goBack()">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
