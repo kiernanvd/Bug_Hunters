@@ -1,3 +1,14 @@
-<div class="product-list">
-  <app-product *ngFor="let bug of bugs" [product]="bug"></app-product>
+<div class="product-list" style="justify-content: center">
+  <div *ngFor="let product of products" class="card"
+  style="width: 500px; height: 570px; margin: 30px; display: flex">
+    <div class="card-header"><strong>{{product.name | uppercase}}</strong></div>
+    <div class="card-body">
+      <p *ngIf="product.imgSrc" style="text-align: center"><img src='{{product.imgSrc}}' width=250 height=250></p>
+      <p><strong>Description: </strong>{{product.description}}</p>
+      <p><strong>Rating: </strong>{{product.rating}}</p>
+      <p><a [routerLink]="['/reviews', product.id]" routerLinkActive="active"><strong>See Reviews</strong></a></p>
+      <p><strong>Price: </strong>{{product.price | currency}}</p>
+      <button type="button" class="btn btn-success"><strong>Add To Cart</strong></button>
+    </div>
+  </div>
 </div>
