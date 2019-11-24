@@ -17,6 +17,7 @@ import { ShopEffects } from './store/effects';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { FooterComponent } from './footer/footer.component';
 import { TermsComponent } from './terms/terms.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { TermsComponent } from './terms/terms.component';
     ReviewsComponent,
     FooterComponent,
     TermsComponent,
+    CartComponent,
   ],
   imports: [
     AppRoutingModule,

@@ -9,7 +9,7 @@
       <p><strong>Rating: </strong>{{product.rating}}</p>
       <p><a [routerLink]="['/reviews', product.id]" routerLinkActive="active"><strong>See Reviews</strong></a></p>
       <p><strong>Price: </strong>{{product.price | currency}}</p>
-      <button type="button" class="btn btn-success"><strong>Add To Cart</strong></button>
+      <button type="button" class="btn btn-success" (click)="addToCart(product)"><strong>Add To Cart</strong></button>
     </div>
   </div>
 </div>
