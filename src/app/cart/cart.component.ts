@@ -15,6 +15,12 @@ items;
 
   ngOnInit() {
     this.items = this.cartService.getItems();
+    
   }
 
+  
+  removeCart(product) {
+    
+    this.items.splice(product, 1);
+  }
 }
