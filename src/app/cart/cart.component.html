@@ -1,0 +1,32 @@
+<div class="cart-item">
+    <h1 align="center">Cart</h1>
+  <table class="table table-light">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Image</th>
+        <th scope="col">Price</th>
+        <th scope="col">Rating</th>
+        <th scope="col">Description</th>
+        <th scope="col">Quantity</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.name}}</td>
+        <td *ngIf="item.imgSrc" style="text-align: left"><img src='{{item.imgSrc}}' width=100 height=100></td>
+        <td>{{item.price | currency}}</td>
+        <td>{{item.rating}}</td>
+        <td>{{item.description}}</td>
+        <td><button type="button" class = "btn btn-secondary" >-</button>&nbsp; 1 &nbsp;<button type="button" class = "btn btn-success" >+</button>&nbsp;</td>
+        <td>
+          
+          <button type="button" class = "btn btn-danger" (click)="removeCart(product)">Remove</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
