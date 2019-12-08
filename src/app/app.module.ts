@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryProductDataService } from './services/in-memory-product-data.service';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +18,8 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { FooterComponent } from './footer/footer.component';
 import { TermsComponent } from './terms/terms.component';
 import { CartComponent } from './cart/cart.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { CartComponent } from './cart/cart.component';
   ],
   imports: [
     AppRoutingModule,
+    FormsModule,
     BrowserModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryProductDataService, { dataEncapsulation: false }),

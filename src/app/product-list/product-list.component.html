@@ -1,7 +1,11 @@
+<div class="md-form" style="height: 25px; display: inline-flex; margin: 40px 0 0 140px">
+  <img src='/assets/images/search.png' width=25 height=25>
+  <input type="search" [(ngModel)]="searchText" placeholder="Search products...">
+  <button type="button" class="btn btn-dark btn-sm rounded" style="padding-top: 1px;" (click)="searchProducts()">Search</button>
+</div>
 <div class="product-list" style="justify-content: center">
-  <h1>Search (FORM)</h1>
   <div *ngFor="let product of products" class="card"
-  style="width: 500px; height: 570px; margin: 30px; display: flex">
+    style="width: 500px; height: 570px; margin: 30px;">
     <div class="card-header"><strong>{{product.name | uppercase}}</strong></div>
     <div class="card-body">
       <p *ngIf="product.imgSrc" style="text-align: center"><img src='{{product.imgSrc}}' width=250 height=250></p>
