@@ -17,6 +17,8 @@ import { ShopEffects } from './store/effects';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { FooterComponent } from './footer/footer.component';
 import { TermsComponent } from './terms/terms.component';
+import {FormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { TermsComponent } from './terms/terms.component';
   ],
   imports: [
     AppRoutingModule,
+    FormsModule,
     BrowserModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryProductDataService, { dataEncapsulation: false }),

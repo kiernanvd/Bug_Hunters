@@ -14,11 +14,28 @@ export class ProductListComponent implements OnInit {
 
   products: ProductModel[];
   selectedProduct: ProductModel;
+  searchText = '';
 
   constructor(private productService: ProductService) {}
 
   ngOnInit() {
     this.productService.getProducts().subscribe(data => this.products = data);
+  }
+
+  searchProducts() {
+
+    let results = 0;
+
+    for (let i = 0; i < this.products.length; i++) {
+      if (this.searchText.toLowerCase() === this.products[i].name.toLowerCase()) {
+        this.products = this.products.filter(data => data === this.products[i]);
+        results++;
+      }
+    }
+
+    if (results === 0) {
+      this.products = this.products.filter(data => !data);
+    }
   }
 
   onclick(inputProduct: ProductModel) {
