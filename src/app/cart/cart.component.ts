@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CartService } from '../services/cart.service';
+import { ProductModel } from '../shared/product-model';
 
 
 @Component({
@@ -9,17 +10,38 @@ import { CartService } from '../services/cart.service';
 })
 export class CartComponent implements OnInit {
 
-  
-items;
+  total;
+items: ProductModel[];
+selectedProduct: ProductModel;
+
   constructor(private cartService: CartService) { }
 
   ngOnInit() {
-    this.items = this.cartService.getItems();
-    
+    this.cartService.getItems()
+            .subscribe(value => {
+                this.total = value;
+            })
+            this.items=this.cartService.getCartItems();
   }
 
-  
-  removeCart(product) {
-    this.items.splice(product, 1);
+
+  removeCart (item: ProductModel) {
+    this.items = this.items.filter(data => data !== item);
+    this.cartService
+    .removeCart(item.id)
+    .subscribe();
   }
+
+  onClick(inputProduct: ProductModel) {
+    this.selectedProduct = inputProduct;
+  }
+
+
+  increase() {
+    this.cartService.updateCartItems(this.total+1);
+}
+
+decrease() {
+    this.cartService.updateCartItems(this.total-1);
+}
 }

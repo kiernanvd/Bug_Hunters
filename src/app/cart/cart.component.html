@@ -1,5 +1,5 @@
 <div class="cart-item">
-    <h1 align="center">Cart</h1>
+    <h1 style="text-align: center">Cart</h1>
   <table class="table table-light">
     <thead class="thead-dark">
       <tr>
@@ -10,7 +10,9 @@
         <th scope="col">Rating</th>
         <th scope="col">Description</th>
         <th scope="col">Quantity</th>
-        <th scope="col"></th>
+        <th scope="col"><div class="container">
+          <button class="btn btn-primary" [routerLink]="['/checkout']">Checkout</button>
+        </div></th>
       </tr>
     </thead>
     <tbody>
@@ -21,12 +23,17 @@
         <td>{{item.price | currency}}</td>
         <td>{{item.rating}}</td>
         <td>{{item.description}}</td>
-        <td><button type="button" class = "btn btn-secondary" >-</button>&nbsp; 1 &nbsp;<button type="button" class = "btn btn-success" >+</button>&nbsp;</td>
+        <td><div>
+          <input type="text" readonly [(ngModel)]="total"/>
+          </div>
+          <button class="btn btn-secondary"(click)="decrease()">-</button>&nbsp;
+          <button class="btn btn-success"(click)="increase()">+</button>
+          </td>
         <td>
           
-          <button type="button" class = "btn btn-danger" (click)="removeCart(product)">Remove</button></td>
+          <button type="button" class = "btn btn-danger" (click)="removeCart(item)">Remove</button></td>
       </tr>
     </tbody>
   </table>
+  
 </div>
-
