@@ -20,7 +20,7 @@
   <div class="nav">
     <ul>
       <li>
-        <img src="/assets/images/shopping-bag.png" alt="cart" />
+        <a [routerLink]="['/cart']">View Cart<img src="/assets/images/shopping-bag.png" alt="cart" /></a>
         <span class="badge" *ngIf="cart.length > 0">{{ cart.length }}</span>
       </li>
     </ul>
