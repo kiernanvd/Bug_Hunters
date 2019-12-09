@@ -17,8 +17,12 @@ import { ShopEffects } from './store/effects';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { FooterComponent } from './footer/footer.component';
 import { TermsComponent } from './terms/terms.component';
+
 import { CartComponent } from './cart/cart.component';
 import { FormsModule } from '@angular/forms';
+import {FormsModule} from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+
 
 
 @NgModule({
@@ -32,6 +36,7 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     TermsComponent,
     CartComponent,
+    LoginComponent,
   ],
   imports: [
     AppRoutingModule,
