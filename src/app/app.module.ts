@@ -18,6 +18,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { FooterComponent } from './footer/footer.component';
 import { TermsComponent } from './terms/terms.component';
 import {FormsModule} from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import {FormsModule} from '@angular/forms';
     ReviewsComponent,
     FooterComponent,
     TermsComponent,
+    LoginComponent,
   ],
   imports: [
     AppRoutingModule,
