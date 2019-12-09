@@ -25,5 +25,6 @@ export class ProductModel {
       date?: string;
     }
   ];
+  quantity?: number;
 }
 

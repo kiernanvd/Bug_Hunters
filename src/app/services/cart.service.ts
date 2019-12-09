@@ -5,7 +5,7 @@ import { Observable, of, BehaviorSubject } from 'rxjs';
 
 
 const httpOptions = {
-  headers: new HttpHeaders({'Content-Type':'application/json'})
+  headers: new HttpHeaders({'Content-Type': 'application/json'})
 };
 
 @Injectable({
@@ -14,7 +14,7 @@ const httpOptions = {
 export class CartService {
   private totalItems: BehaviorSubject<number> = new BehaviorSubject<number>(1);
   items = [];
-  private productUrl = 'api/Productitems'
+  private productUrl = 'api/Productitems';
 
   constructor(private http: HttpClient) { }
 
@@ -25,7 +25,7 @@ export class CartService {
   getItems() {
     return this.totalItems.asObservable();
   }
-  getCartItems(){
+  getCartItems() {
     return this.items;
   }
 
@@ -38,7 +38,4 @@ export class CartService {
     const url = `${this.productUrl}/${id}`;
     return this.http.delete<ProductModel>(url, httpOptions);
   }
-  updateCartItems(items: number) {
-    this.totalItems.next(items);
-}
 }
