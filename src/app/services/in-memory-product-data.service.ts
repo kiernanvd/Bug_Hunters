@@ -82,7 +82,7 @@ export class InMemoryProductDataService implements InMemoryDbService {
           name: 'Oprah Winfrey',
           review:'Got one as a pet. I love millipedes!',
           rating: 5,
-          date: '07/18/2017,
+          date: '07/18/2017',
           },
           {
           name: 'Robert Downey Jr.',
@@ -169,7 +169,7 @@ export class InMemoryProductDataService implements InMemoryDbService {
           date: '03/22/2016',
           },
           {
-          name: 'Dwayne Johnson,
+          name: 'Dwayne Johnson',
           review: 'I love centipedes!',
           rating: 5,
           date: '09/15/2018',
