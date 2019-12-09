@@ -21,6 +21,7 @@ import { CartComponent } from './cart/cart.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { ContactComponent } from './contact/contact.component';
+import { ReviewnewComponent } from './reviewnew/reviewnew.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ContactComponent } from './contact/contact.component';
     CartComponent,
     LoginComponent,
     ContactComponent,
+    ReviewnewComponent,
   ],
   imports: [
     AppRoutingModule,
