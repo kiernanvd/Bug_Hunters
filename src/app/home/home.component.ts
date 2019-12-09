@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
-import { ActivatedRoute,Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { GetItems } from '../store/actions';
 import { Product } from '../product/product.component';
-
 import { ProductService } from '../services/product.service';
-import { ContactModel } from '../shared/contact-model';
-import { LoginModel } from '../shared/login-model';
+// import { ContactModel } from '../shared/contact-model';
+// import { LoginModel } from '../shared/login-model';
 
 
 @Component({
@@ -15,7 +14,7 @@ import { LoginModel } from '../shared/login-model';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  contact: ContactModel;
+  // contact: ContactModel;
   items: Product[] = [];
 
   constructor(private productService: ProductService,
@@ -30,10 +29,5 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.store.dispatch(new GetItems());
-  }
-
-  onSubmit(): void {
-    console.log('contact new submit');
-    this.productService.addContact(this.contact).subscribe();
   }
 }

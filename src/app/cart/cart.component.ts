@@ -11,17 +11,21 @@ import { ProductModel } from '../shared/product-model';
 export class CartComponent implements OnInit {
 
   total;
-items: ProductModel[];
-selectedProduct: ProductModel;
+  items: ProductModel[];
+  selectedProduct: ProductModel;
 
   constructor(private cartService: CartService) { }
 
   ngOnInit() {
     this.cartService.getItems()
-            .subscribe(value => {
-                this.total = value;
-            })
-            this.items=this.cartService.getCartItems();
+    .subscribe(value => {
+      this.total = value;
+    });
+    this.items = this.cartService.getCartItems();
+
+    for (let i = 0; i < this.items.length; i++) {
+      this.items[i].quantity = 1;
+    }
   }
 
 
@@ -36,12 +40,19 @@ selectedProduct: ProductModel;
     this.selectedProduct = inputProduct;
   }
 
+  isDisabled(item: ProductModel) {
+    if (item.quantity === 1) {
+      return true;
+    }
+  }
 
-  increase() {
-    this.cartService.updateCartItems(this.total+1);
-}
+  increase(item: ProductModel) {
+    item.quantity++;
+  }
 
-decrease() {
-    this.cartService.updateCartItems(this.total-1);
-}
+  decrease(item: ProductModel) {
+    if (item.quantity > 1) {
+      item.quantity--;
+    }
+  }
 }

@@ -1,39 +1,40 @@
-<div class="cart-item">
+<div class="container">
+  <div class="cart-item">
     <h1 style="text-align: center">Cart</h1>
-  <table class="table table-light">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Name</th>
-        <th scope="col">Image</th>
-        <th scope="col">Price</th>
-        <th scope="col">Rating</th>
-        <th scope="col">Description</th>
-        <th scope="col">Quantity</th>
-        <th scope="col"><div class="container">
-          <button class="btn btn-primary" [routerLink]="['/checkout']">Checkout</button>
-        </div></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of items">
-        <th scope="row">{{item.id}}</th>
-        <td>{{item.name}}</td>
-        <td *ngIf="item.imgSrc" style="text-align: left"><img src='{{item.imgSrc}}' width=100 height=100></td>
-        <td>{{item.price | currency}}</td>
-        <td>{{item.rating}}</td>
-        <td>{{item.description}}</td>
-        <td><div>
-          <input type="text" readonly [(ngModel)]="total"/>
-          </div>
-          <button class="btn btn-secondary"(click)="decrease()">-</button>&nbsp;
-          <button class="btn btn-success"(click)="increase()">+</button>
+    <table class="table table-light">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Image</th>
+          <th scope="col">Price</th>
+          <th scope="col">Rating</th>
+          <th scope="col">Description</th>
+          <th scope="col">Quantity</th>
+          <th scope="col"><div class="container">
+            <button class="btn btn-primary" [routerLink]="['/checkout']">Checkout</button>
+          </div></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items">
+          <th scope="row">{{item.id}}</th>
+          <td>{{item.name}}</td>
+          <td *ngIf="item.imgSrc" style="text-align: left"><img src='{{item.imgSrc}}' width=100 height=100></td>
+          <td>{{item.price | currency}}</td>
+          <td>{{item.rating}}</td>
+          <td>{{item.description}}</td>
+          <td><div>
+            <input type="text" readonly [(ngModel)]="item.quantity"/>
+            </div>
+            <button class="btn btn-secondary"[disabled]="isDisabled(item)" (click)="decrease(item)">-</button>&nbsp;
+            <button class="btn btn-success"(click)="increase(item)">+</button>
+            </td>
+          <td>
+            <button type="button" class = "btn btn-danger" (click)="removeCart(item)">Remove</button>
           </td>
-        <td>
-          
-          <button type="button" class = "btn btn-danger" (click)="removeCart(item)">Remove</button></td>
-      </tr>
+        </tr>
     </tbody>
   </table>
-  
+</div>
 </div>
