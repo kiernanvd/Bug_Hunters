@@ -46,21 +46,21 @@ export class InMemoryProductDataService implements InMemoryDbService {
         reviews: [
           {
           name: 'Mike Tyson',
-          review: 'I loved this product!!! Would Definitely recommend.',
+          review: 'Love my new cockroaches, great food for my lizards!',
           rating: 4,
-          date: '06/21/2016',
+          date: '06/14/2016',
           },
           {
           name: 'Judy Smithers',
-          review: 'I loved this product!!! Would Definitely recommend.',
+          review: 'Bought a few for a prank. Really scared my friends!',
           rating: 3,
-          date: '06/21/2018',
+          date: '03/12/2018',
           },
           {
           name: 'Ronald Mcdonald',
-          review: 'I loved this product!!! Would Definitely recommend.',
+          review: 'Needed some for an experiment. Healthy bugs and fast delivery!',
           rating: 5,
-          date: '06/21/2018',
+          date: '07/13/2018',
           }
         ],
         },
@@ -79,16 +79,16 @@ export class InMemoryProductDataService implements InMemoryDbService {
           date: '06/21/2016',
           },
           {
-          name: null,
-          review: null,
-          rating: null,
-          date: null,
+          name: 'Oprah Winfrey',
+          review:'Got one as a pet. I love millipedes!',
+          rating: 5,
+          date: '07/18/2017',
           },
           {
-          name: null,
-          review: null,
-          rating: null,
-          date: null,
+          name: 'Robert Downey Jr.',
+          review: 'Great customer service!',
+          rating: 5,
+          date: '06/13/2019',
           }
         ],
         },
@@ -102,18 +102,21 @@ export class InMemoryProductDataService implements InMemoryDbService {
         reviews: [
           {
           name: 'Barack Obama',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'I bought 30 and got 35! Thanks!',
+          rating: 5,
+          date: '09/17/2016',
           },
           {
           name: 'Jimmy Kimmel',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'These were smaller than I expected!',
+          rating: 1,
+          date: '01/01/2016',
           },
           {
           name: 'Lebron James',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'Make sure to give them plenty of water and fruits!',
+          rating: 5,
+          date: '09/01/2016',
           }
         ],
         },
@@ -127,18 +130,21 @@ export class InMemoryProductDataService implements InMemoryDbService {
         reviews: [
           {
           name: 'Taylor Swift',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'Im going to make a song about beetles!.',
+          rating: 5,
+          date: '11/15/2016',
           },
           {
           name: 'Will Smith',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'How are beetles real?',
+          rating: 5,
+          date: '02/02/2016',
           },
           {
           name: 'Red Robin',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'We do NOT recommend making a beetle burger.',
+          rating: 5,
+          date: '03/01/2016',
           }
         ],
         },
@@ -152,18 +158,21 @@ export class InMemoryProductDataService implements InMemoryDbService {
         reviews: [
           {
           name: 'Marcus Grant',
-          review: 'I loved this product!!! Would Definitely recommend.',
+          review: 'Be careful, they have sharp pincers!',
+          rating: 5,
           date: '06/21/2016',
           },
           {
           name: 'Eric Hnederson',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'Dont lose them! They can hide in really small spaces!',
+          rating: 5,
+          date: '03/22/2016',
           },
           {
-          name: null,
-          review: null,
-          date: null,
+          name: 'Dwayne Johnson',
+          review: 'I love centipedes!',
+          rating: 5,
+          date: '09/15/2018',
           }
         ],
         },
@@ -177,18 +186,21 @@ export class InMemoryProductDataService implements InMemoryDbService {
         reviews: [
           {
           name: 'Santa Claus',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'Be good or ill put a tarantula in your stocking!',
+          rating: 5,
+          date: '12/24/2018',
           },
           {
-          name: 'Pablo Esvcobar',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          name: 'Pablo Escobar',
+          review: 'We have big ones in the park nearby!.',
+          rating: 5,
+          date: '10/21/2016',
           },
           {
           name: 'Walter White',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'Theyre super friendly!',
+          rating: 5,
+          date: '06/14/2016',
           }
         ],
         },
@@ -202,18 +214,21 @@ export class InMemoryProductDataService implements InMemoryDbService {
         reviews: [
           {
           name: 'Patrice Johnson',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'Their sting hurts a lot!!',
+          rating: 1,
+          date: '10/29/2016',
           },
           {
           name: 'Ruby Smith',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'Are they venomous?!?!?! Mine stung me!!',
+          rating: 1,
+          date: '01/12/2016',
           },
           {
           name: 'Eddie Murphy',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'I named mine Barthalomew!! He loves country music!',
+          rating: 5,
+          date: '02/11/2016',
           }
         ],
         },
@@ -227,18 +242,21 @@ export class InMemoryProductDataService implements InMemoryDbService {
         reviews: [
           {
           name: 'Matt Damon',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'So pretty.',
+          rating: 5,
+          date: '03/21/2016',
           },
           {
           name: 'Omar Epps',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'Such beautiful colors!',
+          rating: 5,
+          date: '09/21/2016',
           },
           {
           name: 'Johnny Depp',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'Whats their favorite flower?',
+          rating: 5,
+          date: '02/11/2016',
           }
         ],
         },
@@ -252,18 +270,21 @@ export class InMemoryProductDataService implements InMemoryDbService {
         reviews: [
           {
           name: 'Denzel Washington',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'Moths are bad ass.',
+          rating: 5,
+          date: '04/14/2016',
           },
           {
           name: 'Meryl Streep',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'Thanks for delivering over holidays, you saved me!',
+          rating: 5,
+          date: '09/20/2016',
           },
           {
           name: 'Antonio Benderas',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'FIVE STARS!!! THANK YOU!!',
+          rating: 5,
+          date: '07/29/2016',
           }
         ],
         },
@@ -277,18 +298,21 @@ export class InMemoryProductDataService implements InMemoryDbService {
         reviews: [
           {
           name: 'Bruce Lee',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'Crickets love kicking, like me!.',
+          rating: 5,
+          date: '06/01/2016',
           },
           {
           name: 'Tom Hanks',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'If I got lost on an island, all I would want is a jar of crickets.',
+          rating: 5,
+          date: '06/29/2016',
           },
           {
           name: 'Steven King',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'NOTHING is cooler than crickets.',
+          rating: 5,
+          date: '05/24/2016',
           }
         ],
         },
@@ -302,18 +326,21 @@ export class InMemoryProductDataService implements InMemoryDbService {
         reviews: [
           {
           name: 'George Martin',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'I should write a book on ants...',
+          rating: 5,
+          date: '12/15/2016',
           },
           {
           name: 'Jim Carey',
-          review: 'I loved this product!!! Would Definitely recommend.',
-          date: '06/21/2016',
+          review: 'Love my new ant colony.',
+          rating: 5,
+          date: '05/15/2016',
           },
           {
-          name: null,
-          review: null,
-          date: null,
+          name: 'Jackie Chan',
+          review: 'Will buy more again soon from Bug Hunters!',
+          rating: 5,
+          date: '11/14/2018',
           }
         ],
       },
